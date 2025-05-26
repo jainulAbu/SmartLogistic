@@ -1,0 +1,48 @@
+{
+  "name": "logistics-app",
+  "version": "1.0.0",
+  "description": "A comprehensive logistics management platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-client": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^3.2.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/lab": "^7.0.0-beta.12",
+    "@mui/material": "^7.1.0",
+    "@mui/x-date-pickers": "^8.3.0",
+    "@react-google-maps/api": "^2.20.6",
+    "chart.js": "^4.4.9",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "file-saver": "^2.0.5",
+    "firebase-admin": "^11.5.0",
+    "mongoose": "^8.14.3",
+    "multer": "^1.4.5-lts.2",
+    "papaparse": "^5.5.2",
+    "react-chartjs-2": "^5.3.0",
+    "recharts": "^2.15.3",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
